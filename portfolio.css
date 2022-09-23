@@ -304,16 +304,16 @@ section .title::after{
 
 
 .skills-content .right .html::before{
-    width: 90%;
+    width: 65%;
 }
 .skills-content .right .css::before{
-    width: 60%;
+    width: 85%;
 }
 .skills-content .right .DSA::before{
-    width: 80%;
+    width: 70%;
 }
 .skills-content .right .CPP::before{
-    width: 50%;
+    width: 60%;
 }
 .skills-content .right .mySap::before {
     width: 70%;
