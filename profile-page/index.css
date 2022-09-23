@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+*{
+    margin:0px;
+    padding: 0px;
+    font-family: "Poppins";
+}
+
+body{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    min-height: 100vh;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+.header_wrapper header {
+    width: 100%;
+    /* background-color: url("https://coolors.co/gradient/40c9ff-e81cff"); */
+    background: hsla(197, 100%, 63%, 1);
+    background: linear-gradient(90deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 55%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 55%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 55%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#40C9FF", endColorstr="#E81CFF", GradientType=1 );
+    background-repeat: no-repeat;
+    background-size: 50% 20%/cover;
+    min-height: calc(100px + 15vw);
+  }
+
+  .header_wrapper .cols_container .left_col{
+    padding:2rem;
+    text-align: center;
+    max-width:20rem;
+    position: relative;
+    margin: 0px auto;
+  }
+
+  .header_wrapper .cols_container .left_col .img_container{
+    position: absolute;
+    top:-80px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .header_wrapper .cols_container .left_col .img_container img{
+    width:10rem;
+    height:10rem;
+    border-radius: 50%; 
+    display: block;
+    object-fit:cover;
+    border:4px #fff solid;
+    box-shadow: 1px 3px 12px rgba(0, 0, 0, 0.18);
+  }
+
+  .header_wrapper .cols_container .left_col .img_container span {
+    position: absolute;
+    background: #2afa6a;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    bottom: 3px;
+    right: 11px;
+    border: 2px solid #fff;
+  }
+
+  .header_wrapper .cols_container .left_col h2{
+    margin-top: 3rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .header_wrapper .cols_container .left_col p{
+    font-size: 0.9rem;
+    margin:0;
+  }
+  .header_wrapper .cols_container .left_col .about{
+    justify-content: space-between;
+    gap:10px;
+    position: relative;
+    margin:2rem 0px;
+  }
+
+  .header_wrapper .cols_container .left_col .about li {
+    display: flex;
+    flex-direction: column;
+    color: #818181;
+    font-size: 0.9rem;
+  }
+
+  .header_wrapper .cols_container .left_col .about li span {
+    color: #1d1d1d;
+    font-weight: 600;
+  }
+  .header_wrapper .cols_container .left_col .about:after {
+    position: absolute;
+    content: "";
+    bottom: -16px;
+    display: block;
+    background: #cccccc;
+    height: 1px;
+    width: 100%;
+  }
+  .header_wrapper .cols_container .content p {
+    font-size: 1rem;
+    color: #1d1d1d;
+    line-height: 1.8em;
+  }
+  .header_wrapper .cols_container .content ul {
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+  }
+  .header_wrapper .cols_container .content ul li {
+    display: flex;
+  }
+  .header_wrapper .cols_container .content ul i {
+    font-size: 1.3rem;
+  }
