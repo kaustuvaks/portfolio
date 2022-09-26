@@ -707,15 +707,15 @@ section .title::after{
         justify-content: center;
     }
 
-    @media (max-width: 380px) {
+    @media (max-width: 400px) {
         
         .certificates{
             justify-content: center;
         }
         .certificates .cards{
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
             gap: 2rem;
-            margin: 4rem 5vw;
+            margin: 4rem 4vw;
             padding-top:60px;
             list-style-type: none;
         }
