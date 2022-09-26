@@ -323,7 +323,7 @@ section .title::after{
 }
 /* Certificates section */
 .certificates .title::after{
-    content: "my Certifications";
+    content: "Certifications";
 }
 .certificates{
     height: fit-content;;
