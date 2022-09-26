@@ -706,5 +706,19 @@ section .title::after{
     .certificates .centering{
         justify-content: center;
     }
+
+    @media (max-width: 380px) {
+        
+        .certificates{
+            justify-content: center;
+        }
+        .certificates .cards{
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 4rem 5vw;
+            padding-top:60px;
+            list-style-type: none;
+        }
+    }
 }
 
