@@ -719,6 +719,17 @@ section .title::after{
             padding-top:60px;
             list-style-type: none;
         }
+        .card__header {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 1em;
+            padding: 1em;
+            border-radius: calc(var(--curve) * 1px) 0 0 0;    
+            background-color: var(--surface-color);
+            transform: translateY(-100%);
+            transition: .2s ease-in-out;
+          }
     }
 }
 
