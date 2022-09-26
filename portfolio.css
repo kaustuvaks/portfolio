@@ -354,6 +354,7 @@ section .title::after{
     border-radius: calc(var(--curve) * 1px);
     overflow: hidden;
     text-decoration: none;
+    border:1px solid gray;
   }
   
   .card__image {      
