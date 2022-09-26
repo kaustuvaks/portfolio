@@ -695,5 +695,13 @@ section .title::after{
         font-size: 23px;
         line-height: 38px;
     }
+    .certificates{
+        width:90%;
+        height: fit-content;
+        justify-content: center;
+    }
+    .certificates .centering{
+        justify-content: center;
+    }
 }
 
