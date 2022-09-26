@@ -333,6 +333,9 @@ section .title::after{
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
     padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .cards {
