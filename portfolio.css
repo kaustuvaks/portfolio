@@ -323,10 +323,10 @@ section .title::after{
 }
 /* Certificates section */
 .certificates .title::after{
-    content: "Certifications";
+    content: "My Badges";
 }
 .certificates{
-    height: fit-content;;
+    height: fit-content;
     color: #111;
     min-height: 500px;
     background-size: cover;
@@ -475,6 +475,102 @@ section .title::after{
     font-family: "poppins"; 
     font-weight: 600;
   }
+/* Certificates styling */
+.badges{
+    
+    color: #111;
+    min-height: 300px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin: 4rem 5vw;
+    padding-top:60px;
+    list-style-type: none;
+    padding-bottom:150px;
+}
+
+
+.flip-card {
+    background-color: white;
+    height: 299px;
+    display:block;
+    perspective:1000 px; /* Remove this if you don't want the 3D effect */
+    border:1px solid gray;
+    border-radius: 8px;;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: white;
+    color: black;
+    border-radius: 7px;
+  }
+  
+  .flip-card-front img{
+    width:100%;
+    height: 293px;
+  }
+
+  /* Style the back side */
+  .flip-card-back {
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 7px;
+    height: 299px;
+    border: 1px white solid;
+  }
+
+  .flip-card-back .card-title{
+    font-family: Arial, Helvetica, sans-serif;
+    padding:12px;
+    background-color: dodgerblue;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px ;
+  }
+
+  .flip-card-back .card-desc{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    height:247px;
+    padding:12px;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px ;
+  }
+
+
 /* contact section styling */
 .contact .title::after{
     content: "get in touch";
@@ -571,7 +667,25 @@ section .title::after{
   background: none;
 }
 
-
+/* input[type="submit"]{
+    color: #fff;
+    display: block;
+    width: 160px!important;
+    height: 45px;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    flex-wrap: nowrap;
+    background: crimson;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+input[type="submit"]:hover{
+    color: crimson;
+  background: none;
+} */
 /* responsive media query start */
 @media (max-width: 1104px) {
     .about .about-content .left img{
@@ -708,6 +822,15 @@ section .title::after{
         justify-content: center;
     }
 
+    .badges{
+        width:90%;
+        height: fit-content;
+        justify-content: center;
+    }
+    /* .certificates .centering{
+        justify-content: center;
+    } */
+
     @media (max-width: 400px) {
         
         .certificates{
@@ -730,7 +853,15 @@ section .title::after{
             background-color: var(--surface-color);
             transform: translateY(-100%);
             transition: .2s ease-in-out;
-          }
+        }
+        .badges .cards{
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 2rem;
+            margin: 4rem 4vw;
+            padding-top:60px;
+            list-style-type: none;
+        }
+
     }
 }
 

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Website</title>
     <link rel="stylesheet" type="text/css" href="portfolio.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
@@ -122,21 +122,21 @@
     </section>
 
     <section class="certificates max-width" id="certificates">
-            <h2 class="title">Certificates</h2>
+            <h2 class="title">Badges</h2>
             <ul class="cards">
                 <li>
                     <a href="" class="card">
-                        <img src="./images/blob.png" class="card__image" alt="img1" />
+                        <img src="./images/CyberEssentials.png" class="card__image" alt="img1" />
                         <div class="card__overlay">
                         <div class="card__header">
                             <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
-                            <img class="card__thumb" src="./images/blob.png" alt="PCAP" />
+                            <img class="card__thumb" src="./images/CyberEssentials.png" alt="Cisco Cybersecurity" />
                             <div class="card__header-text">
-                                <h3 class="card__title">PCAP: Python essentials</h3>            
+                                <h3 class="card__title">Cisco: CyberSecurity Essentials</h3>            
                                 <span class="card__status">September, 2022</span>
                             </div>
                         </div>
-                        <p class="card__description">Python libraries, pip and Datastructures.</p>
+                        <p class="card__description">How a cybercriminal thinks, Cybersecurity cubes, Security measures</p>
                         </div>
                     </a>      
                 </li>
@@ -174,7 +174,72 @@
                 </li>
             </ul>
 
-            <div class="centering"><div class="extralink"><a href="">view all </a></div></div>  
+            <div class="centering"><div class="extralink"><a href="https://www.credly.com/users/kaustuva-kumar-sahu/badges?sort=most_popular&page=1">view all </a></div></div>  
+    </section>
+
+
+
+    <section class="badges max-width" id="badges">
+        <h2 class="title">Certificates</h2>
+        <div class="cards">
+            <!-- <li>     -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src=".\images\blob.png" alt="Avatar">
+                      </div>
+                      <div class="flip-card-back">
+                        <div class="card-title">
+                            <h1>OpenEDG and Cisco</h1>
+                        </div>
+                        <div class="card-desc">
+                            <p>PCAP : Python Essentials</p><br/>
+                            <p>Certified in python. Its libraries, packages and python data structure. The pip package manager.</p><br/>
+                            <p>Issued : September, 2022.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            <!-- </li>
+            <li> -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src=".\images\kaggle.png" alt="Avatar">
+                      </div>
+                      <div class="flip-card-back">
+                        <div class="card-title">
+                            <h1>Kaggle</h1>
+                        </div>
+                        <div class="card-desc">
+                            <p>Intermediate Machine learning Certificate</p><br/>
+                            <p>I learnt about pipelines and their uses. Feature engineering and why it is useful.</p><br/>
+                            <p>Issued : November, 2021.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            <!-- </li>
+            <li>     -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src=".\images\HackerRank.png" alt="HacckerRank">
+                      </div>
+                      <div class="flip-card-back">
+                        <div class="card-title">
+                            <h1>HackerRank</h1>
+                        </div>
+                        <div class="card-desc">
+                            <p>SQL : Intermediate Certified</p><br/>
+                            <p>The certification exam tested my profiency in complex joins and aggregating functions. </p><br/>
+                            <p>Issued : September, 2022.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            <!-- </li> -->
+        </ul>
     </section>
 
 
@@ -207,30 +272,37 @@
                             <i class="fas fa-envelope"></i>
                             <div class="info">
                                 <div class="head">Email</div>
-                                <div class="sub-title">kaustuva1@gmail.com</div>
+                                <div class="sub-title">kaustuvaks@gmail.com</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fa fa-phone"></i>
+                            <div class="info">
+                                <div class="head">WhatsApp/Phone</div>
+                                <div class="sub-title">+91-7327929887</div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="column right">
-                    <div class="text">Other handles</div>
-                    <form action="#">
+                    <div class="text">Contact me</div>
+                    <form action="https://formspree.io/f/xjvzrylw" method="POST">
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" placeholder="Name" required>
+                                <input type="text" placeholder="Name" name="Sender" required>
                             </div>
                             <div class="field email">
-                                <input type="email" placeholder="Email" required>
+                                <input type="email" placeholder="email" name="Sender-email" required>
                             </div>
                         </div>
                         <div class="field">
-                            <input type="text" placeholder="Subject" required>
+                            <input type="text" placeholder="Subject" name="Subject" required>
                         </div>
                         <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                            <textarea cols="30" rows="10" placeholder="Message.." name="Content" required></textarea>
                         </div>
                         <div class="button-area">
-                            <button href="mailto:kaustuvaks@gmail@gmail.com" class="Mailme">Send message</button>
+                            <button type="submit">Send</button>
                         </div>
                     </form>
                 </div>
