@@ -572,6 +572,10 @@ section .title::after{
 
 
 /* contact section styling */
+
+/* .contact{
+    background-color: blueviolet;
+} */
 .contact .title::after{
     content: "get in touch";
 }
